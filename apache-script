@@ -1,0 +1,17 @@
+#!/bin/bash
+
+## Author : Lynn
+## Date : 06-13-2022
+
+## Intalling needed packages for apache## 
+
+yum install vim -y
+yum install httpd -y
+sleep 3
+systemctl start httpd
+sleep 2
+systemctl status httpd
+sleep 3
+ifconfig
+                
+echo "move into /var/www/html and add index.html":wq
