@@ -1,21 +1,31 @@
+
 #!/bin/bash
 
-echo "welcome to royal farms. you like to get your car washed?"
+echo "Welcome to Royal Farms. Would you like to get your car washed today?"
 read ANSWER
 
 if
 [ $ANSWER = yes ]
 then
-echo "what type of was would you like"
+echo "what type of wash would you like?"
 sleep 2
 echo "displaying options"
 sleep 3
-echo "ultimate" "regular"
+echo "ultimate" "or" "regular"
 sleep 3
 echo "please select your desired type of wash"
 read OPTION
-echo " You have selected $OPTION, please tender you transaction and enter the car wash. Please come again"
+echo "You have selected $OPTION, please complete your transaction. Roll up all windows and place your car in neutral when the sign tells you to do so. Thank you for shopping with Royal Farms"
 
 else
-echo "please tender transaction, please come again!"
+echo "Please select grade"
+sleep 2
+echo "87"",""89"",""93"
+read GRADE
+echo "You have selected $GRADE, please lift the nozzle"
+sleep 8
+echo "would you like your reciept?"
+echo "yes" "or" "no"
+read Y
+echo "$Y,Thank you for shopping at Royal Farms"
 fi
